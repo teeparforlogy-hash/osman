@@ -1,6 +1,7 @@
 {
-  "latestVersionCode": 2,
+  "latestVersionCode": 5,
   "forceUpdate": true,
   "updateUrl": "https://tepor.vercel.app/",
   "updateMessage": "⚠️ تنبيه: هذا تحديث تجريبي إجباري للتأكد من عمل الميزة بنجاح. يرجى الضغط على زر التحديث."
 }
+
