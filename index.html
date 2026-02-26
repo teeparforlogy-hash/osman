@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عثمان علي إبراهيم - مصمم ومبرمج مواقع وتطبيقات</title>
+  <meta name="description"
+    content="الموقع الشخصي لعثمان علي إبراهيم سليمان - مصمم ومبرمج مواقع إلكترونية وتطبيقات أندرويد من السودان">
+  <meta name="keywords" content="عثمان علي, مبرمج, مصمم مواقع, تطبيقات أندرويد, السودان, وين لقيت, مكسب">
+  <meta property="og:title" content="عثمان علي إبراهيم - مصمم ومبرمج">
+  <meta property="og:description" content="مصمم ومبرمج مواقع إلكترونية وتطبيقات أندرويد من السودان">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Osman</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"><span>🏠</span> الرئيسية</a></li>
+        <li><a href="#about"><span>👤</span> من أنا</a></li>
+        <li><a href="#skills"><span>🛠️</span> المهارات</a></li>
+        <li><a href="#apps"><span>🚀</span> المشاريع</a></li>
+        <li><a href="#downloads"><span>📥</span> التحميل</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-glow hero-glow-3"></div>
+
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <canvas id="particleCanvas" style="position:absolute;inset:0;z-index:0;pointer-events:none;"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        متاح للعمل على مشاريع جديدة
+      </div>
+
+      <h1 class="hero-name">
+        مرحباً، أنا<br>
+        <span class="gradient-text">عثمان علي إبراهيم</span>
+      </h1>
+
+      <p class="hero-title">مصمم ومبرمج مواقع إلكترونية وتطبيقات أندرويد</p>
+
+      <div class="hero-typing">
+        <span class="cursor"></span>
+        <span id="typingText"></span>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="https://winlegit.vercel.app/" class="btn btn-primary" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          زيارة الموقع الرسمي
+        </a>
+        <a href="https://wa.me/249917832882" class="btn btn-outline" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          تواصل معي
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-indicator"></div>
+      <span>اسحب للأسفل</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">✦ نبذة عني</span>
+        <h2 class="section-title">تعرف على <span class="gradient-text">قصتي</span></h2>
+        <p class="section-subtitle">شغف بالتكنولوجيا وابتكار حلول رقمية تخدم المجتمع</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="about-image-wrapper">
+            <div class="about-avatar">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+              </svg>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number" data-count="3">0</div>
+              <div class="stat-label">تطبيقات</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="10">0</div>
+              <div class="stat-label">مشاريع ويب</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="5">0</div>
+              <div class="stat-label">سنوات خبرة</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-info reveal reveal-delay-2">
+          <h3>عثمان علي إبراهيم سليمان</h3>
+          <p>
+            أنا مصمم ومبرمج مواقع إلكترونية وتطبيقات أندرويد من السودان. أسعى دائماً لتقديم حلول رقمية مبتكرة تخدم
+            المجتمع المحلي والعربي. قمت بتصميم العديد من المواقع الإلكترونية وتطبيقات الأندرويد التي تلبي احتياجات
+            المستخدمين بطريقة سهلة وعصرية.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <div class="detail-icon">🇸🇩</div>
+              <div class="detail-text">
+                <span class="detail-label">الجنسية</span>
+                <span class="detail-value">سوداني</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">📍</div>
+              <div class="detail-text">
+                <span class="detail-label">مكان الميلاد</span>
+                <span class="detail-value">ولاية كسلا</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">💬</div>
+              <div class="detail-text">
+                <span class="detail-label">واتساب</span>
+                <span class="detail-value">+249917832882</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">✈️</div>
+              <div class="detail-text">
+                <span class="detail-label">تيلجرام</span>
+                <span class="detail-value">o09178@</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="section-header reveal">
+        <span class="section-badge">✦ مهاراتي</span>
+        <h2 class="section-title">ماذا <span class="gradient-text">أقدم</span></h2>
+        <p class="section-subtitle">خدمات متكاملة في تصميم وتطوير المنتجات الرقمية</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <h3>تصميم المواقع</h3>
+          <p>تصميم وتطوير مواقع إلكترونية عصرية وسريعة الاستجابة تعمل على جميع الأجهزة بتصاميم جذابة ومميزة.</p>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon">📱</div>
+          <h3>تطبيقات أندرويد</h3>
+          <p>تطوير تطبيقات أندرويد احترافية بأداء عالي وتجربة مستخدم سلسة باستخدام أحدث التقنيات.</p>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon">🎨</div>
+          <h3>تصميم واجهات</h3>
+          <p>تصميم واجهات مستخدم (UI/UX) عصرية وبديهية تجعل التفاعل مع المنتج تجربة ممتعة.</p>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon">⚙️</div>
+          <h3>حلول متكاملة</h3>
+          <p>تقديم حلول تقنية متكاملة تشمل قواعد البيانات، الخوادم السحابية، وأنظمة الدفع الإلكتروني.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apps/Projects Section -->
+  <section class="section apps" id="apps">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">✦ مشاريعي</span>
+        <h2 class="section-title">أعمالي <span class="gradient-text">المميزة</span></h2>
+        <p class="section-subtitle">مجموعة من التطبيقات والمشاريع التي قمت بتصميمها وتطويرها</p>
+      </div>
+
+      <div class="apps-grid">
+        <!-- WinLegit App -->
+        <div class="app-card reveal">
+          <div class="app-icon-wrapper">
+            <img src="assets/winlegit.png" alt="تطبيق وين لقيت">
+          </div>
+          <div class="app-info">
+            <span class="app-tag tag-social">📲 تواصل اجتماعي</span>
+            <h3 class="app-name">وين لقيت - WinLegit</h3>
+            <p class="app-description">
+              تطبيق تواصل اجتماعي سوداني يحتوي على العديد من الميزات الفريدة. يمكنك إنشاء المجموعات والتفاعل مع المحتوى،
+              بالإضافة لسوق إلكتروني لبيع وشراء المنتجات. يحتوي على محفظة إلكترونية وميزة توثيق الحساب بالشارة الزرقاء
+              مجاناً.
+              التطبيق مجاني بالكامل!
+            </p>
+            <div class="app-features">
+              <span class="feature-chip">💬 مجموعات</span>
+              <span class="feature-chip">🛒 سوق إلكتروني</span>
+              <span class="feature-chip">💰 محفظة إلكترونية</span>
+              <span class="feature-chip">✅ توثيق مجاني</span>
+              <span class="feature-chip">🆓 مجاني بالكامل</span>
+            </div>
+            <div class="app-actions">
+              <a href="https://winlegit.vercel.app/download/WinLegit.apk" class="btn-download" id="download-winlegit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                تحميل التطبيق
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mihrab Al-Nile App -->
+        <div class="app-card reveal">
+          <div class="app-icon-wrapper">
+            <img src="assets/mihrab.png" alt="تطبيق محراب النيل">
+          </div>
+          <div class="app-info">
+            <span class="app-tag tag-islamic">📖 ديني</span>
+            <h3 class="app-name">محراب النيل</h3>
+            <p class="app-description">
+              تطبيق إسلامي مميز لقراءة القرآن الكريم. يوفر تجربة قراءة سلسة ومريحة مع واجهة مستخدم أنيقة
+              وتصميم يساعد على التركيز والخشوع أثناء التلاوة.
+            </p>
+            <div class="app-features">
+              <span class="feature-chip">📖 القرآن الكريم</span>
+              <span class="feature-chip">🔍 بحث سريع</span>
+              <span class="feature-chip">🎨 تصميم أنيق</span>
+            </div>
+            <div class="app-actions">
+              <span class="btn-download coming-soon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                قريباً
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maksab App -->
+        <div class="app-card reveal">
+          <div class="app-icon-wrapper">
+            <img src="assets/maksab.png" alt="تطبيق مكسب">
+          </div>
+          <div class="app-info">
+            <span class="app-tag tag-business">🏪 إدارة أعمال</span>
+            <h3 class="app-name">مكسب - Maksab</h3>
+            <p class="app-description">
+              يا زول، داير تريح بالك في إدارة محلك وتنسى جرسة الدفاتر؟ تطبيق "مكسب" وصل عشان يخليك سيد الموقف! 🚀
+              دا ما مجرد تطبيق POS، دا اليد اليمين لتجارتك. بلمسة واحدة في تلفونك بتعرف مبيعاتك اللحظية، أرباحك الصافية،
+              وحتى البضاعة العايزة تخلص "مكسب" بنبهك ليها قبل ما تشطب.
+            </p>
+            <div class="app-features">
+              <span class="feature-chip">📴 شغال بدون نت</span>
+              <span class="feature-chip">📊 تقارير ذكية</span>
+              <span class="feature-chip">🧾 فواتير احترافية</span>
+              <span class="feature-chip">🔒 أمان عالي</span>
+              <span class="feature-chip">📦 إدارة المخزون</span>
+              <span class="feature-chip">🔐 تأمين بصمة/PIN</span>
+            </div>
+            <div class="app-actions">
+              <span class="btn-download coming-soon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                رابط التحميل قريباً
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section class="section" id="downloads">
+    <div class="container">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-3"></div>
+      </div>
+
+      <div class="section-header reveal">
+        <span class="section-badge">✦ تحميل</span>
+        <h2 class="section-title">حمّل <span class="gradient-text">تطبيقاتي</span></h2>
+        <p class="section-subtitle">اختر التطبيق الذي يناسبك وحمّله مجاناً الآن</p>
+      </div>
+
+      <div class="downloads-grid">
+        <div class="download-card reveal">
+          <div class="download-icon">
+            <img src="assets/winlegit.png" alt="وين لقيت">
+          </div>
+          <h3>وين لقيت</h3>
+          <p>تطبيق تواصل اجتماعي سوداني مجاني بالكامل مع سوق إلكتروني ومحفظة رقمية</p>
+          <a href="https://winlegit.vercel.app/download/WinLegit.apk" class="btn-download" id="download-winlegit-2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            تحميل APK
+          </a>
+        </div>
+
+        <div class="download-card reveal reveal-delay-1">
+          <div class="download-icon">
+            <img src="assets/mihrab.png" alt="محراب النيل">
+          </div>
+          <h3>محراب النيل</h3>
+          <p>تطبيق لقراءة القرآن الكريم بتصميم أنيق وتجربة قراءة مريحة</p>
+          <span class="btn-download coming-soon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            قريباً
+          </span>
+        </div>
+
+        <div class="download-card reveal reveal-delay-2">
+          <div class="download-icon">
+            <img src="assets/maksab.png" alt="مكسب">
+          </div>
+          <h3>مكسب</h3>
+          <p>تطبيق نقاط بيع ذكي لإدارة محلك التجاري بسهولة واحترافية</p>
+          <span class="btn-download coming-soon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            قريباً
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Futuristic Footer -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand-section">
+          <div class="footer-logo">
+            <span class="logo-icon">✨</span>
+            <h3 class="logo-text">Osman</h3>
+          </div>
+          <p class="footer-tagline">نبتكر للمستقبل، نصمم بشغف، ونبني حلولاً ذكية تليق بعصر الذكاء الاصطناعي.</p>
+          <div class="footer-social-minimal">
+            <a href="https://www.facebook.com/tepor4" target="_blank" title="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://x.com/tepor4" target="_blank" title="Twitter (X)">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+              </svg>
+            </a>
+            <a href="https://t.me/o09178" target="_blank" title="Telegram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.891 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.24.26-.51.26-.35 0-.29-.13-.41-.47l-1.15-3.77-3.32-1.04c-.722-.224-.736-.723.15-.1.08l12.92-4.98c.594-.224 1.114.13.914.868z" />
+              </svg>
+            </a>
+            <a href="https://youtube.com/@tepor4" target="_blank" title="YouTube">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/249917832882" target="_blank" title="WhatsApp">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@tepor4" target="_blank" title="TikTok">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12.536 0H15.93c.123 3.121 1.412 5.074 4.49 5.341V8.6c-2.492-.258-3.401-1.293-4.34-2.887v8.683c0 3.864-2.73 7.604-7.234 7.604C4.305 22 2.627 18.52 3.012 15.684c.381-3.155 2.112-6.521 6.305-6.521 1.144 0 2.18.291 3.22.846V0z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav-grid">
+          <div class="footer-nav-col">
+            <h4>المشاريع</h4>
+            <ul>
+              <li><a href="#apps">تطبيق وين لقيت</a></li>
+              <li><a href="#apps">محراب النيل</a></li>
+              <li><a href="#apps">تطبيق مكسب</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>تواصل</h4>
+            <ul>
+              <li><a href="mailto:osman@example.com">البريد الإلكتروني</a></li>
+              <li><a href="https://t.me/winleget">قناة التيلجرام</a></li>
+              <li><a href="https://whatsapp.com/channel/0029VbCsWTKLI8YTMThb9H0V">قناة الواتساب</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-v2">
+        <div class="footer-bottom-inner">
+          <div class="copyright-text">
+            جميع الحقوق محفوظة © <span class="year-num">2026</span>
+          </div>
+          <div class="footer-location">
+            <span>صُنع بكل</span>
+            <span class="heart-ai">❤️</span>
+            <span>في السودان</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
